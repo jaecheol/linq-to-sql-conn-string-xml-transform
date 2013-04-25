@@ -49,6 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="App.source.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.source.Debug.config">
+      <DependentUpon>App.source.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.source.Release.config">
+      <DependentUpon>App.source.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
