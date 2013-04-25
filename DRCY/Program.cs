@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DRCY
 {
-    public class TestContent : DbContext
+    public class ProductionContent : DbContext
     {
         public DbSet<Episode> Episodes { get; set; }
     }
@@ -22,9 +22,9 @@ namespace DRCY
     {
         static void Main(string[] args)
         {
-            using (var ctx = new TestContent())
+            using (var ctx = new ProductionContent())
             {
-                ctx.Episodes.Add(new Episode() {Id = 100, Title = "(EBS)다큐10+"});
+                ctx.Episodes.Add(new Episode() {Id = 100, Title = "(MBC)구가의 서"});
 
                 ctx.SaveChanges();
             }
