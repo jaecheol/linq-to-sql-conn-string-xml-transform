@@ -8,17 +8,15 @@ using Model;
 
 namespace DRCY
 {
-    public class Episode
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-    }
-
     class Program
     {
         static void Main(string[] args)
         {
-            var ctx = new ContentDataContext();
+            using (var ctx = new ContentDataContext())
+            {
+                foreach (var episode in ctx.Episodes)
+                    Console.WriteLine(episode.Title);
+            }
         }
     }
 }
