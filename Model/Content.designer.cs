@@ -36,7 +36,8 @@ namespace Model
     #endregion
 		
 		public ContentDataContext() : 
-				base(global::Model.Properties.Settings.Default.DRCY_TestContentConnectionString, mappingSource)
+				base("Data Source=(localdb)\\v11.0;Initial Catalog=DRCY.TestContent;Integrated Security=" +
+						"True", mappingSource)
 		{
 			OnCreated();
 		}
