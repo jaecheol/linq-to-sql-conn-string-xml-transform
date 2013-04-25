@@ -35,13 +35,6 @@ namespace Model
     partial void DeleteEpisode(Episode instance);
     #endregion
 		
-		public ContentDataContext() : 
-				base("Data Source=(localdb)\\v11.0;Initial Catalog=DRCY.TestContent;Integrated Security=" +
-						"True", mappingSource)
-		{
-			OnCreated();
-		}
-		
 		public ContentDataContext(string connection) : 
 				base(connection, mappingSource)
 		{

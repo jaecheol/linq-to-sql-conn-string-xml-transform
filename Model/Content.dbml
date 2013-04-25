@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DRCY.TestContent" Class="ContentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="ConnectionString" ConnectionString="Data Source=(localdb)\v11.0;Initial Catalog=DRCY.TestContent;Integrated Security=True" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Episodes" Member="Episodes">
     <Type Name="Episode">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
